@@ -111,6 +111,7 @@ class Edit extends Component {
     if (e.target.value) {
       let file = e.target.files[0];
       getBase64(file).then(base64 => {
+        console.log(base64);
         this.setState({ avatar: base64 });
       });
     }
